@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const argv = require('minimist')(process.argv.slice(2));
 const colors = require('colors');
 
@@ -12,7 +14,7 @@ function percentage(partialValue, totalValue) {
   return (100 * partialValue) / totalValue;
 }
 
-typeof(argv.dice) === 'number' ? dice = argv.dice : dice = 6
+typeof argv.dice === 'number' ? (dice = argv.dice) : (dice = 6);
 
 const sumData = argv.sum;
 var sum = 0;
@@ -60,12 +62,12 @@ if (numberPercentage <= 25) {
   var numberStr = 'Error, this error need to re reported.';
 }
 
-playDiceSound()
+playDiceSound();
 
 console.log('\nRoll The Dice!: '.bold + numberStr);
 
-if ( argv.check !== undefined ){
-  const screenshot = require('screenshot-desktop')
+if (argv.check !== undefined) {
+  const screenshot = require('screenshot-desktop');
 
-  screenshot({ format:'png', filename: 'screenshotCheck.png' })
+  screenshot({ format: 'png', filename: 'screenshotCheck.png' });
 }
