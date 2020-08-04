@@ -8,7 +8,6 @@
     "rtd": "src/index.js"
   },
   "dependencies": {
-    "canvas": "^2.6.1",
     "colors": "^1.4.0",
     "minimist": "^1.2.5",
     "play-sound": "^1.1.3",
