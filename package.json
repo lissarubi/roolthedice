@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "A CLI program to rool dices for RPG's or not",
   "main": "src/index.js",
+  "bin": {
+    "roolthedice": "src/index.js",
+    "rtd": "src/index.js"
+  },
   "dependencies": {
     "canvas": "^2.6.1",
     "colors": "^1.4.0",
-    "desktop-screenshot": "^0.1.1",
-    "merge-images": "^2.0.0",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "play-sound": "^1.1.3",
+    "screenshot-desktop": "^1.12.1"
   },
   "devDependencies": {},
   "scripts": {
