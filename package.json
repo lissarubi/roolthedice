@@ -1,6 +1,6 @@
 {
   "name": "roolthedice",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "A CLI program to rool dices for RPG's or not",
   "main": "src/index.js",
   "bin": {
